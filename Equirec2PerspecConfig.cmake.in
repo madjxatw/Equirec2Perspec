@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/Equirec2PerspecTargets.cmake")
+
+include(CMakeFindDependencyMacro)
+find_dependency(OpenCV)
+
+check_required_components(Equirec2Perspec)
